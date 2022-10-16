@@ -1,0 +1,111 @@
+<!-- HEADER -->
+<%- include('partials/header')  %> 
+
+<div>
+    <div class="relative">        
+        <div class="absolute flex justify-center items-center w-full h-full bg-black/50">
+            <form action="/login" class="text-center w-[80%] md:[70%] lg:w-[30%]">
+                <a href="/" class="flex items-center justify-center gap-3 mb-5">
+                    <img src="/img/water.png" alt="icon" class="w-12">
+                    <h1 class="text-4xl font-bold text-white">seabnb</h1>
+                </a>
+                <h3 class="text-xl text-white mb-5">Welcome to seabnb</h3>
+                
+                <div class="w-full relative mb-2">
+                    <input 
+                        type="text"
+                        placeholder="Email"
+                        name="email"
+                        class="w-full rounded-full h-12 text-center text-white outline-none bg-white/10"
+                        >
+                    <p id="emailError" class="text-sm text-red-500 mt-1"></p>
+                </div>
+                    
+                    <div class="w-full relative mb-2">
+                        <input 
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        class="w-full rounded-full h-12 text-center text-white outline-none bg-white/10"
+                        >
+                        <span id="togglePassword" class="absolute right-6 top-3 cursor-pointer"><i class="fa-solid fa-eye-slash text-white"></i></span>
+                    <p id="passwordError" class="text-sm text-red-500 mt-1"></p>
+                    </div>
+                
+                <button class="w-full rounded-full bg-white py-2">Sign in</button>
+                <div class="flex justify-between text-white my-5">
+                    <div>
+                        <input type="checkbox" id="box">
+                        <label for="box">Remember Me</span>
+                    </div>
+                    <a href="" class="hover:underline ">Forgot Password</a>
+                </div>
+
+                <div class="flex items-center my-5">
+                    <div class="flex-grow h-px bg-white"></div>
+                    <span class="flex-shrink text-white px-4"> Or Sign In With </span>
+                    <div class="flex-grow h-px bg-white"></div>
+                </div>
+
+                <div class="flex gap-2 mb-8">
+                    <button class="basis-1/2 rounded-lg bg-white text-black py-2">Facebook</button>
+                    <button class="basis-1/2 rounded-lg bg-white text-black py-2">Google</button>
+                </div>
+
+                <p class="text-white">Not a member? <a href="/signup" class="underline">Register now</a></p>
+
+            </form>
+
+
+        </div>
+        
+        <img src="/img/login-bg.jpg" alt="" class="w-full h-screen object-cover">
+    </div>
+</div>
+
+<script>
+    const form = document.querySelector('form');
+    let emailError = document.querySelector('#emailError');
+    let passwordError = document.querySelector('#passwordError');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // RESET INPUT
+        emailError.textContent = '';
+        passwordError.textContent = '';
+
+        // get the values
+        const email = form.email.value;
+        const password =  form.password.value;
+
+        try {
+            const result = await fetch('/login', {
+                method: 'POST',
+                body: JSON.stringify({ email, password }),
+                headers: { 'Content-Type' : 'application/json'}
+            })
+            const data = await result.json();
+            console.log(data);
+            if (data) {
+                emailError.textContent = data.email;
+                passwordError.textContent = data.password;
+            };
+            if(data.user) {
+                location.assign('/');
+            }
+        } catch (err) {
+            console.log(err)
+        }
+    })
+
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', () => {
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type",type)
+
+    })
+</script>

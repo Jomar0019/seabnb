@@ -1,0 +1,29 @@
+<div class="mx-auto w-[90%] lg:w-[80%] mt-10 mb-24 lg:my-12">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
+
+    <% post.map(p => { %>
+        <a href="/post/<%= p._id %> " class="">
+            <div class="relative col-span-1 rounded-lg overflow-hidden">
+                <img 
+                    src="<%= p.img1 %> " 
+                    alt="image" 
+                    class="w-full h-60 object-cover mb-3 rounded-lg">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <h1 class="font-semibold"><%= p.address  %> </h1>
+                        <p><i class="fa-solid fa-star text-gray-900"></i> New</p>
+                    </div>
+                    <p class="text-gray-500">100 kilometers away</p>
+                    <% const date = new Date(p.createdAt) %> 
+                    <p class="text-gray-500"><%= date.toDateString() %> </p>
+                    <p><span class="font-semibold">₱ <%= p.price %> </span> night</p>
+                </div>
+                <div class="absolute top-2 right-5">
+                    <i class="fa-regular fa-heart text-white text-xl"></i>
+                </div>
+            </div>
+        </a>
+    <% }) %>
+    
+    </div>
+</div>

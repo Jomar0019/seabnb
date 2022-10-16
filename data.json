@@ -1,0 +1,73 @@
+[
+    {
+        "title": "Boracay",
+        "address": "Boracay, Philippines",
+        "price": "5000",
+        "description": "About 5,470,000 results (0.67 seconds) Boracay , one of the top beaches in the Philippines and one of the best Visayas tourist spots, is blessed with a long stretch of powdery white sand beach (called White Beach), crystal clear and azure waters, a stunning sunset, and more.",
+        "img1": "https://www.discoverthephilippines.com/wp-content/uploads/2020/12/article-cover-photo-boracay.jpg",
+        "img2": "https://a.cdn-hotels.com/gdcs/production5/d320/a0c5a994-d99a-4278-a1b1-8a3b652461ac.jpg",
+        "img3": "https://api.time.com/wp-content/uploads/2022/07/Worlds-Greatest-Places-2022-BoracayPhilippines.jpeg",
+        "img4": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img5": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+        "host": "Jomar Magpoot",
+        "lat": 11.9674,
+        "lng": 121.9248
+    },
+    {
+        "title": "El Nido",
+        "address": "El Nido, Philippines",
+        "price": "5000",
+        "description": "El Nido is a coastal town in Palawan. El Nido comprises 45 islands and islets; limestone cliffs are also found here, which form a Karst backdrop similar to those found in Ha Long Bay, Krabi and Guilin.",
+        "img1": "https://theworldtravelguy.com/wp-content/uploads/2020/01/DJI_0386-2-1024x683.jpg",
+        "img2": "https://a.cdn-hotels.com/gdcs/production5/d320/a0c5a994-d99a-4278-a1b1-8a3b652461ac.jpg",
+        "img3": "https://a.cdn-hotels.com/gdcs/production13/d1585/20120d80-bf76-4553-89f4-0098f94423d8.jpg",
+        "img4": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img5": "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "host": "Jomar Magpoot",
+        "lat": 11.1906,
+        "lng": 119.5082
+
+    },
+    {
+        "title": "Twin Lagoon",
+        "address": "Coron, Philippines",
+        "price": "5000",
+        "description": "Coron is a fantastic base for adventure, especially for underwater explorers seeking to dive amid the Japanese shipwrecks of the 1940s. Hop a guided mangrove kayak tour or practice your killer spike on the beach-volleyball court at Atwayan Beach. Jungle treks, horseback tours and island camping will further quench your thirst for the ultimate outdoor experience.",
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/14/1e/90/serene-beauty-of-the.jpg?w=1200&h=-1&s=1",
+        "img2": "https://theworldtravelguy.com/wp-content/uploads/2020/02/DJI_0191.jpg",
+        "img3": "https://www.wonderlandtravelblog.com/wp-content/uploads/2020/07/Philippines-Coron-Bay-1440x960.jpg",
+        "img4": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img5": "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "host": "Jomar Magpoot",
+        "lat": 12.0489,
+        "lng": 120.1519
+    },
+    {
+        "title": "Chocolate Hills",
+        "address": "Bohol, Philippines",
+        "price": "5000",
+        "description": "The Chocolate Hills form a rolling terrain of haycock-shaped hills—mounds of a generally conical and almost symmetrical shape. Estimated to be from 1,268 to about 1,776 individual mounds, these cone-shaped or dome-shaped hills are actually made of grass-covered limestone.",
+        "img1": "https://upload.wikimedia.org/wikipedia/commons/2/28/Chocolate_Hills_overview.JPG",
+        "img2": "https://a.cdn-hotels.com/gdcs/production86/d1393/066c104b-e8c0-4364-b281-69bc7bd970d3.jpg",
+        "img3": "https://infobohol.com/wp-content/uploads/2020/09/Bohol-Famous-Chocolate-Hills-2.jpg",
+        "img4": "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img5": "https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "host": "Jomar Magpoot",
+        "lat": 9.8297,
+        "lng": 124.1397
+    },
+    {
+        "title": "Picnic Grove",
+        "address": "Tagaytay, Philippines",
+        "price": "5000",
+        "description": "Picnic Grove is a pleasant attraction in Tagaytay City that lets you embrace the beauty of nature. Surround yourself with its lush green trees and plants while enjoying a scenic view of the Taal lake and volcano. Escape the city noise and heat with its serene environment, cool temperature and soothing fresh air.",
+        "img1": "https://www.vacationhive.com/images/hives/21/21-tagaytay-main-banner.jpg",
+        "img2": "https://tagaytaycity.ph/wp-content/uploads/2017/04/Picnic-Grove-1.2.2-scaled.jpg",
+        "img3": "https://i.pinimg.com/736x/1a/19/60/1a1960c7fbeb9db0df14d35347d275eb--travel-tours-food-travel.jpg",
+        "img4": "https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img5": "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "host": "Jomar Magpoot",
+        "lat": 14.1251,
+        "lng": 120.9981
+    }
+]

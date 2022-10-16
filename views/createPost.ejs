@@ -1,0 +1,59 @@
+<%- include('partials/header')  %> 
+
+<%- include('partials/nav')  %> 
+
+<div class="mx-auto w-[90%] lg:w-[40%] my-12">
+    <h1 class="text-2xl font-bold mb-5">Host seabnb</h1>
+    <form action="/create" method="post" class="text-black">
+        <input type="text" 
+            name="title" 
+            placeholder="Title" 
+            class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5"
+            required>
+        <input type="text" 
+            name="address" 
+            placeholder="Address" 
+            class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5"
+            required>
+        <input type="text" 
+            name="price" 
+            placeholder="Price" 
+            class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5"
+            required>
+        <h2 class="text-xl mb-2">Description</h2>
+        <textarea name="description" id="" cols="30" rows="5" placeholder="Description" class="w-full border border-gray-400 rounded-xl p-5 mb-3"></textarea>
+        <input type="hidden" name="host" value="<%= user._id  %>">
+
+        <div class="border border-gray-300 rounded-lg p-5 mb-4">
+            <h1 class="text-xl font-bold mb-3">Image Links (<span class="text-sm font-normal"> atleast 3 images URL</span> )</h1>
+            <input type="text" 
+                name="img1" 
+                placeholder="Please enter image URL" 
+                class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5" required>
+            <input type="text" 
+                name="img2" 
+                placeholder="Please enter image URL" 
+                class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5">
+            <input type="text" 
+                name="img3" 
+                placeholder="Please enter image URL" 
+                class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5">
+            <input type="text" 
+                name="img4" 
+                placeholder="Please enter image URL" 
+                class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5">
+            <input type="text" 
+                name="img5" 
+                placeholder="Please enter image URL" 
+                class="block h-12 pl-5 rounded-full border border-gray-400 w-full mb-5">
+        </div>
+
+        <div class="text-right mb-32">
+            <button class="bg-blue-500 py-2 px-4 rounded-full text-white mb-5">Submit</button>
+        </div>
+    </form>
+</div>
+
+<%- include('partials/footer')  %> 
+
+<%- include('partials/end')  %> 
